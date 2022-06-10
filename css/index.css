@@ -1,0 +1,212 @@
+/* MAIN DIAPO */
+.uneActu{
+	background-color: white;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	border-radius: 30px;
+	margin-bottom: 10px;
+}
+
+.slide .imgSlide{
+	width: 50%;
+}
+
+.slide .imgSlide img{
+	width: 100%;
+}
+
+.diapo{
+	display: flex;
+	justify-content: center;
+	height: 70%;
+	align-items: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.slide a {
+  background: none;
+}
+
+a.slide__prev,
+.slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 15%;
+}
+
+a.slide__next,
+.slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 15%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+/* MAIN CONTENT */
+
+.actuForm{
+	display: flex;
+}
+
+.actu{
+	width: 70%;
+	overflow-y: scroll;
+	margin-left: 5%;
+}
+
+.actuContent{
+	border: solid black 1px;
+	width: 100%;
+}
+
+.actu, .formPreinscription{
+	max-height: 200px;
+}
+
+.formPreinscription{
+	width: 20%;
+}
+
+.formPreinscription form{
+	display: flex;
+	flex-direction: column;
+}
+
+.formPreinscription form > *{
+	margin: 2%;
+}
+
+.formPreinscription form input[type='text'], .formPreinscription form select{
+	width: 85%;
+}
+
+.actuForm .formPreinscription form input[type='number'], .actuForm .formPreinscription form input[type='submit']{
+	width: 65%;
+}
+
+input[type="submit"]{
+	background-color: white;
+	border: 1px solid black;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	.actu, .formPreinscription{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.diapo{
+		height: 40%;
+		width: 100%;
+	}
+
+	.diapo .slides, .diapo .slider{
+		height: 100%;
+	}
+
+	.diapo .slider{
+		max-width: none;
+		margin: 0;
+	}
+
+	.diapo .slides{
+		margin: 0;
+	}
+
+	.diapo .slides, .diapo .slider, .diapo .slide{
+		width: 100%;
+	}
+
+	.diapo .slide .imgSlide{
+		width: 50%;
+		display: flex;
+		align-items: center;
+	}
+
+	.actuForm{
+		height: 60%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.actuForm .actu, .actuForm .formPreinscription{
+		width: 80%;
+		border: 1px solid black;
+	}
+
+	.actuForm .actu legend, .actuForm .formPreinscription legend{
+	}
+
+	.actuForm .actu{
+		margin: 0;
+	}
+
+	.actuForm .formPreinscription{
+		margin-top: 5%;
+	}
+
+	.formPreinscription{
+		max-height: initial;
+	}
+
+	.actuForm .formPreinscription form{
+		height: 100%;
+	}
+
+	.actuForm .formPreinscription form *{
+		padding: 3%;
+		border: 1px solid black;
+	}
+}

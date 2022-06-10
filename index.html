@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=400, initial-scale=1">
+	<title>Les films de plein air</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<header class="titre">
+		<h1>Les films de plein air</h1>
+		<h2>Projection gratuite de film de grand auteur</h2>
+		<h3>Chaque soir du 5 au 8 aout, de 18 heures a minuit.</h3>
+	</header>
+	<main>
+		<div class="slider-container diapo">
+			<div class="slider">
+				<div class="slides">
+					<div id="slides__1" class="slide">
+						<a class="imgSlide" href="detail/detailPolisse.html"><img src="img/film/polisse.jpg" alt="affiche Polisse"></a>
+						<a class="slide__prev" href="#slides__6" title="Prev"></a>
+						<a class="slide__next" href="#slides__2" title="Next"></a>
+					</div>
+					<div id="slides__2" class="slide">
+						<a class="imgSlide" href="detail/detailRealite.html"><img src="img/film/realite.jpg" alt="affiche Realite"></a>
+						<a class="slide__prev" href="#slides__1" title="Prev"></a>
+						<a class="slide__next" href="#slides__3" title="Next"></a>
+					</div>
+					<div id="slides__3" class="slide">
+						<a class="imgSlide" href="detail/detailMaLoute.html"><img src="img/film/maLoute.jpg" alt="affiche Ma Loute"></a>
+						<a class="slide__prev" href="#slides__2" title="Prev"></a>
+						<a class="slide__next" href="#slides__4" title="Next"></a>
+					</div>
+					<div id="slides__4" class="slide">
+						<a class="imgSlide" href="detail/detailElleSenVa.html"><img src="img/film/elleSenVa.jpg" alt="affiche Elle s'en va"></a>
+						<a class="slide__prev" href="#slides__3" title="Prev"></a>
+						<a class="slide__next" href="#slides__5" title="Next"></a>
+					</div>
+					<div id="slides__5" class="slide">
+						<a class="imgSlide" href="detail/detailPersonalShopper.html"><img src="img/film/personalShopper.jpg" alt="affiche Personal Shopper"></a>
+						<a class="slide__prev" href="#slides__4" title="Prev"></a>
+						<a class="slide__next" href="#slides__6" title="Next"></a>
+					</div>
+					<div id="slides__6" class="slide">
+						<a class="imgSlide" href="detail/detailLaTeteHaute.html"><img src="img/film/laTeteHaute.jpg" alt="affiche La tête haute"></a>
+						<a class="slide__prev" href="#slides__5" title="Prev"></a>
+						<a class="slide__next" href="#slides__1" title="Next"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="actuForm">
+			<fieldset class="actu">
+				<legend>Actualités</legend>
+				<div class="uneActu">
+					<p>19/05/2022</p>
+					<p>S'il y a du nouveau à propos du festival, c'est dans cet espace dédié que vous en saurez informer, n'hésitez pas à venir le consulter régulièrement.</p>
+				</div>
+				<div class="uneActu">
+					<p>19/05/2022</p>
+					<p>S'il y a du nouveau à propos du festival, c'est dans cet espace dédié que vous en saurez informer, n'hésitez pas à venir le consulter régulièrement.</p>
+				</div>
+				<div class="uneActu">
+					<p>19/05/2022</p>
+					<p>S'il y a du nouveau à propos du festival, c'est dans cet espace dédié que vous en saurez informer, n'hésitez pas à venir le consulter régulièrement.</p>
+				</div>
+				<div class="uneActu">
+					<p>19/05/2022</p>
+					<p>S'il y a du nouveau à propos du festival, c'est dans cet espace dédié que vous en saurez informer, n'hésitez pas à venir le consulter régulièrement.</p>
+				</div>
+			</fieldset>
+			<fieldset class="formPreinscription">
+				<legend>Préinscription</legend>
+				<form>
+					<input type="text" name="nom" placeholder="Nom">
+					<input type="text" name="prenom" placeholder="Prénom">
+					<select>
+						<option disabled selected>Choix de la séance</option>
+						<!-- 5 AOÛT -->
+						<option disabled>5 août</option>
+						<option>Polisse - 2h07 - 18h00</option>
+						<option>Réalité - 1h35 - 20h15</option>
+						<option>Ma Loute - 2h03 - 22h00</option>
+						<!-- 6 AOÛT -->
+						<option disabled>6 août</option>
+						<option>Ma Loute - 2h03 - 18h00</option>
+						<option>Polisse - 2h07 - 20h10</option>
+						<option>Réalité - 1h35 - 22h25</option>
+						<!-- 7 AOÛT -->
+						<option disabled>7 août</option>
+						<option>Elle s'en va - 1h53 - 18h00</option>
+						<option>Personal Shopper - 1h50 - 20h00</option>
+						<option>La tête haute - 2h00 - 22h00</option>
+						<!-- 8 AOÛT -->
+						<option disabled>8 août</option>
+						<option>La tête haute - 2h00 - 18h00</option>
+						<option>Elle s'en va - 1h53 - 20h10</option>
+						<option>Personal Shopper - 1h50 - 22h10</option>
+					</select>
+					<input type="number" name="nbr" placeholder="Nombre de personne">
+					<input type="submit" name="valider">
+				</form>
+			</fieldset>
+		</div>
+	</main>
+	<footer>
+		<div class="footerContent">
+			<div class="footerSocial">
+				<img src="img/social/facebook.png" alt="Facebook">
+				<img src="img/social/twitter.png" alt="Twitter">
+				<img src="img/social/instagram.png" alt="Instagram">
+			</div>
+			<div class="footerLegal">
+				Confidentialité et cookies | Conditions générales | Accessibilité | À propos
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
